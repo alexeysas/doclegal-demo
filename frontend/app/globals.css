@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .field-label {
+    @apply mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500;
+  }
+  .field-input {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200;
+  }
+  .field-textarea {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200;
+  }
+}
+
+.nda-doc {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #111827;
+  line-height: 1.55;
+}
+.nda-doc h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.nda-doc h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.nda-doc h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+.nda-doc p {
+  margin-bottom: 0.75rem;
+}
+.nda-doc ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.nda-doc ol li {
+  margin-bottom: 0.75rem;
+}
+.nda-doc .nda-var {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+.nda-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.nda-doc th,
+.nda-doc td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+  text-align: left;
+  font-size: 0.875rem;
+}
