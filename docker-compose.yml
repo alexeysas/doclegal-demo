@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-dev-secret-change-in-production}
+      - DB_PATH=/app/data/app.db
